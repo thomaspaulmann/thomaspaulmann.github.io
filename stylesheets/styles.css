@@ -55,6 +55,8 @@ a:hover small {
   width:860px;
   margin:0 auto;
   text-align: center;
+  position: relative;
+  top: 30%;
 }
 
 blockquote {
