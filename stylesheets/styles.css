@@ -35,8 +35,7 @@ body {
   position: relative;
   z-index: 1;
   width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
+  left: 5%;
 }
 
 #fade_out {
@@ -77,7 +76,6 @@ a:hover {
 }
 
 /* Paragraphs */
-/* Paragraphs */
 
 p {
   padding-top: 20px;
@@ -88,18 +86,10 @@ p {
 
 /* Media Types */
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-}
-
 /* Large desktop */
-@media (min-width: 1200px) {
+@media screen and (min-width:1300px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
 }
