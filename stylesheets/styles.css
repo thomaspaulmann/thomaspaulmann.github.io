@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
   font: 13px Hack, monospace;
 }
@@ -21,7 +16,7 @@ h1 {
   padding-top: 500px;
 }
 
-.landing {
+.landing_container {
   width: 100%;
   height:100vh;
   position: relative;
@@ -34,11 +29,27 @@ h1 {
   background-size: cover;
 }
 
-.content {
+.content_container {
   width: 100%;
   height: 5000px;
   position:relative;
   z-index: 10;
   background-color: #00F;
   background-repeat: no-repeat;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
 }
