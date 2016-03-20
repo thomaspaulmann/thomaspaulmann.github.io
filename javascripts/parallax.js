@@ -1,19 +1,16 @@
 
 (function($){
-  $.fn.parallax = function(options){
+  $.fn.parallax = function(){
     var $$ = $(this);
     offset = $$.offset();
 
-    // Defaults
-    var defaults = {
+    // Options
+    var opts = {
       "start": 0,
       "coeff": -0.5,
-      "limit": 0,
+      "limit": -$('.landing').height(),
       "offset": 0
     };
-
-    // Extend Defaults with optional Options
-    var opts = $.extend(defaults, options);
 
     return this.each(function(){
       $(window).bind('scroll', function() {
@@ -29,6 +26,14 @@
             $$.css({
               "margin-top": newCoord + "px"
             });
+
+            // Background
+            //$('.landing').css({
+              //"margin-top": (windowTop/30) + "em"
+
+              //"background-position-y": (windowTop/30) + "em",
+              // "background-size": (1000 - windowTop/2) + "px"
+            //});
           }
       });
     });
@@ -36,6 +41,5 @@
 })(jQuery);
 
 $(document).ready(function() {
-  var landingContainerHeight = $('.landing_container').height();
-  $('.content_container').parallax({"limit": -landingContainerHeight});
+  $('.content').parallax();
 });
