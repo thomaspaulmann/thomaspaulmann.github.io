@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: #fff;
   font: 13px Hack, monospace;
 }
 
@@ -14,31 +15,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-h1 {
-  text-align: center;
-  padding-top: 500px;
-}
-
-.landing {
-  width: 100%;
-  height:100vh;
-  position: relative;
-  z-index: 0;
-  background-color: #F00;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.content {
-  width: 100%;
-  height: 5000px;
-  position:relative;
-  z-index: 10;
-  background-color: #00F;
-  background-repeat: no-repeat;
 }
