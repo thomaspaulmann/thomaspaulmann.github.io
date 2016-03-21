@@ -86,6 +86,13 @@ p {
 
 /* Media Types */
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .logo_container {
+    top: 30px;
+  }
+}
+
 /* Large desktop */
 @media screen and (min-width:1300px) {
   body {
