@@ -1,0 +1,23 @@
+html {
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  margin-top: 40px;
+}
+
+/* Links */
+
+a {
+  color: #000;
+}
+
+/* Media Types */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .logo_container {
+    top: 10px;
+  }
+}

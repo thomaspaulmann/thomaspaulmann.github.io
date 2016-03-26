@@ -1,6 +1,8 @@
 html {
   background-color: #000;
   color: #fff;
+  line-height: 24pt;
+  font-size: 20pt;
 }
 
 body {
@@ -16,6 +18,13 @@ body {
   z-index: 2;
   top: 60px;
   left: 5%;
+}
+
+.contact_container {
+  position:fixed;
+  z-index: 3;
+  top: 60px;
+  right: 5%;
 }
 
 .landing_container {
@@ -38,16 +47,26 @@ body {
   left: 5%;
 }
 
+.footer_container {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  left: 5%;
+  background: #000;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: right;
+}
+
 #fade_out {
   position: relative;
-  height: 100px;
+  height: 60px;
   background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
 }
 
 #content {
   position: relative;
   background: #000;
-  padding-bottom: 60px;
 }
 
 /* Headlines */
@@ -55,8 +74,6 @@ body {
 h1 {
   line-height: 26pt;
   font-size: 22pt;
-  opacity: 0.95;
-
 }
 
 h2 {
@@ -67,21 +84,31 @@ h2 {
 /* Links */
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.footer_container a {
+  color: #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  text-decoration: none;
+}
+
+.footer_container a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 /* Paragraphs */
 
 p {
   padding-top: 20px;
-  line-height: 24pt;
-  font-size: 20pt;
-  opacity: 0.95;
 }
 
 /* Media Types */
@@ -90,6 +117,15 @@ p {
 @media (max-width: 480px) {
   .logo_container {
     top: 30px;
+  }
+
+  .footer_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #fade_out {
+    height: 30px;
   }
 }
 
