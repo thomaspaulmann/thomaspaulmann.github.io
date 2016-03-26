@@ -71,18 +71,6 @@ body {
   background: #000;
 }
 
-/* Headlines */
-
-h1 {
-  line-height: 26pt;
-  font-size: 22pt;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 500px;
-}
-
 /* Links */
 
 a {
@@ -125,9 +113,11 @@ a:hover {
 
 /* Paragraphs */
 
+/*
 p {
   padding-top: 20px;
 }
+*/
 
 /* SVGs */
 
