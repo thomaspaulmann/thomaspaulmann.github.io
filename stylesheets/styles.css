@@ -21,6 +21,13 @@ body {
   left: 5%;
 }
 
+.contact_container {
+  position:fixed;
+  z-index: 2;
+  top: 60px;
+  right: 5%;
+}
+
 .landing_container {
   position: relative;
   height: 100%;
