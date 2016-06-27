@@ -1,13 +1,165 @@
-body {
-  background-color: #fff;
-  font: 13px Hack, monospace;
+html {
+  background-color: #000;
+  color: #fff;
+  font-size: 20pt;
+  height: 100%;
 }
 
+body {
+  font-family: "MaisonNeue-Bold", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+}
+
+/* Containers */
+
+.logo_container {
+  position:fixed;
+  z-index: 2;
+  top: 60px;
+  left: 5%;
+}
+
+.landing_container {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('../images/thomaspaulmann@2x.jpg');
+}
+
+.content_container {
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  left: 5%;
+  text-align: center;
+}
+
+.footer_container {
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  left: 5%;
+  background: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: right;
+}
+
+#fade_out {
+  position: relative;
+  height: 60px;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
+}
+
+#content {
+  position: relative;
+  background: #000;
+}
+
+/* Links */
+
 a {
-  color: #000;
+  color: #fff;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
   text-decoration: none;
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.footer_container a {
+  color: #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  text-decoration: none;
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.footer_container a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+/* Paragraphs */
+
+p {
+  padding-top: 20px;
+}
+
+/* SVGs */
+
+.arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  height: 30px;
+  width: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  cursor: pointer;
+  cursor: hand;
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.arrow:hover {
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+/* Media Types */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .logo_container {
+    top: 30px;
+  }
+
+  .footer_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #fade_out {
+    height: 30px;
+  }
+}
+
+/* Large desktop */
+@media screen and (min-width:1300px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
 }
