@@ -39,7 +39,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: 50%;
-  background-image: url('../images/thomaspaulmann.jpg');
+  background-image: url('../images/thomaspaulmann@2x.jpg');
 }
 
 .content_container {
