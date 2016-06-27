@@ -1,7 +1,6 @@
 html {
   background-color: #000;
   color: #fff;
-  line-height: 1;
   font-size: 20pt;
   height: 100%;
 }
@@ -20,13 +19,6 @@ body {
   z-index: 2;
   top: 60px;
   left: 5%;
-}
-
-.contact_container {
-  position:fixed;
-  z-index: 3;
-  top: 60px;
-  right: 5%;
 }
 
 .landing_container {
