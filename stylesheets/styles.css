@@ -45,14 +45,14 @@ body {
 .content_container {
   position: relative;
   z-index: 1;
-  width: 90%;
+  width: 85%;
   left: 5%;
 }
 
 .footer_container {
   position: relative;
   z-index: 1;
-  width: 90%;
+  width: 85%;
   left: 5%;
   background: #000;
   padding-top: 60px;
