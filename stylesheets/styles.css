@@ -126,7 +126,7 @@ a:hover {
   position: absolute;
   z-index: 1;
   bottom: 60px;
-  right: 60px;
+  left: 60px;
 }
 
 .intro {
@@ -174,7 +174,7 @@ a:hover {
 
   .contact {
     bottom: 30px;
-    right: 30px;
+    left: 30px;
   }
 
 }
