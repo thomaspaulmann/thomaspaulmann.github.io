@@ -10,6 +10,31 @@ body {
   font-size: 30px;
 }
 
+section {
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  position: relative;
+  text-align: left;
+  font-size: 30px;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .left {
   position: fixed;
   float: left;
@@ -51,29 +76,34 @@ body {
   right: 60px;
 }
 
-section {
-  position: relative;
+.intro {
   height: 100vh;
-  width: 80%;
-  left: 10%;
 }
 
-section p {
+.intro h1 {
   position: relative;
   top: 50%;
-  text-align: center;
-  font-size: 50px;
 
-  -webkit-background-transform: translateY(-50%);
-     -moz-background-transform: translateY(-50%);
-       -o-background-transform: translateY(-50%);
-                     transform: translateY(-50%);
+    -webkit-background-transform: translateY(-50%);
+       -moz-background-transform: translateY(-50%);
+         -o-background-transform: translateY(-50%);
+                       transform: translateY(-50%);
+}
+
+.footer p {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Media Types */
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+  p {
+    font-size: 25px;
+  }
 
   .left {
     width: 100%;
@@ -82,6 +112,16 @@ section p {
 
   .right {
     width: 100%;
+  }
+
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+
+  .contact {
+    bottom: 30px;
+    right: 30px;
   }
 
 }
