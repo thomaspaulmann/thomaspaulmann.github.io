@@ -151,6 +151,20 @@ a:hover {
 
 /* Media Types */
 
+/* Portrait tablets */
+@media (max-width: 768px) {
+
+  .left {
+    width: 100%;
+    position: relative;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
