@@ -149,6 +149,31 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.content_container {
+  margin-top: 30px;
+}
+
+.content_container  h1 {
+  margin-bottom: 20px;
+}
+
+.content_container section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content_container section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.content_container section p {
+  text-align: center;
+  font-size: 8px;
+}
+
 /* Media Types */
 
 /* Portrait tablets */
