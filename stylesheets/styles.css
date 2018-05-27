@@ -157,19 +157,20 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.content_container section {
+.content_container div {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.content_container section img {
+.content_container div img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 600px;
 }
 
-.content_container section p {
+.content_container div p {
   text-align: center;
   font-size: 8px;
 }
