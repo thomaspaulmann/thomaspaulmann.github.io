@@ -153,16 +153,16 @@ a:hover {
   margin-top: 30px;
 }
 
-.content_container  h1 {
+.content_container h1 {
   margin-bottom: 20px;
 }
 
-.content_container .post {
+.post {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.content_container .post img {
+.post img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -170,7 +170,7 @@ a:hover {
   max-width: 600px;
 }
 
-.content_container .post p {
+.post p {
   text-align: center;
   font-size: 8px;
 }
